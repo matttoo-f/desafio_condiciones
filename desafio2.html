@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/desafio2.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="grid-container">
+        <header>Desafío 2</header>
+        <main>
+            <h4>elige maximo 10 stikers</h4>
+            <div class="stikers">
+                <div class="pack">
+                    <img src="asset/img/desafio2-1.jpg" alt="">
+                    <input onchange="calcularStikers()" id="input1" type="number" min="0" max="10">
+                </div>
+                <div class="pack">
+                    <img src="asset/img/desafio2-2.jpg" alt="">
+                    <input onchange="calcularStikers()" id="input2" type="number" min="0" max="10">
+                </div>
+                <div class="pack">
+                    <img src="asset/img/desafio2-3.jpg" alt="">
+                    <input onchange="calcularStikers()" id="input3" type="number" min="0" max="10">
+                </div>
+            </div>
+            <p id="msg"></p>
+
+        </main>
+        <footer>Contador de stikers</footer>
+    </div>
+    <script src="asset/js/desafio2.js"></script>
+</body>
+</html>

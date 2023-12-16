@@ -1,0 +1,73 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 5em 1fr 4em;
+}
+header {
+    grid-area: header;
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+h4 {
+    color:lightslategray ;
+}
+.digitos {
+    display: flex;
+    gap: 20px;
+}
+select {
+    border: 1px solid rgb(37, 37, 212) ;
+    border-radius: 5px;
+    color: rgb(37, 37, 212);
+    transition: all 0.3s;
+}
+select:hover {
+    scale: 1.05;
+}
+button {
+    border: none;
+    background-color: rgb(37, 37, 212);
+    color: white;
+    width: 140px;
+    height: 30px;
+    transition: all 0.3s;
+}
+button:hover {
+    background-color: rgb(15, 15, 185);
+    scale: 1.1;
+}
+.correcto {
+    color: green;
+}
+.incorrecto {
+    color: red;
+}
+footer {
+    grid-area: footer;
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
